@@ -10,22 +10,78 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family: 'Outfit';
+      src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+      font-weight: 100 900;
+    }
+    @font-face {
+      font-family: 'Young-Serif';
+      src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      height: 100vh;
+      background-color: hsl(30, 54%, 90%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 25px;
+      padding-left: 15px;
+    }
+    .title-text {
+      font-family: 'Young-Serif', sans-serif;
+      font-size: 25px;
+    }
+    .main-card {
+      background-color: white;
+      width: 380px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .food-img-container {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .food-img {
+      width: 360px;
+      border-radius: 10px;
+    }
+    .prep-card {
+      background-color: hsl(330, 100%, 98%);
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .prep-header {
+      color: hsl(332, 51%, 32%);
+    }
+
   </style>
 </head>
 <body>
+<div class="main-card"> 
+  <div class="food-img-container">
+    <img src="./assets/images/image-omelette.jpeg" class="food-img">
+  </div>
+  <h1 class="title-text">Simple Omelette Recipe</h1>
 
-  Simple Omelette Recipe
+  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <div class="prep-card">
+      <h2 class="prep-header">Preparation time</h2>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      <ul class="prep-body">
+        <li>Approximately 10 minutes</li>
+        <li>Preparation: 5 minutes</li>
+        <li>Cooking: 5 minutes</li>
+      </ul>
+    </div>
 
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
 
   Ingredients
 
@@ -67,7 +123,8 @@
   20g
 
   Fat
-  22g
+  22g</div>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
