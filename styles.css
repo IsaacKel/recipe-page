@@ -101,7 +101,7 @@ textarea:not([rows]) {
 .main-card {
   margin-top: 50px;
   background-color: white;
-  width: 40rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
